@@ -4,29 +4,26 @@ html(lang='en')
         meta(charset="UTF-8")
         title What the Flexbox?!
         link(rel="stylesheet" type="text/css" href="css/app.css")
-        script(type="text/javascript" src="js/app.min.js")
+        script(type="text/javascript" src="js/lib/jquery.min.js")
+        script(type="text/javascript" src="js/sunset_timelapse.js")
     body
+        include includes/_cover-video
         .wrap
-            include includes/_display-flex
-            include includes/_flex-direction
-            include includes/_flex-wrap
-            include includes/_flex-order
-            include includes/_flex-alignment
-            include includes/_align-items
-            include includes/_align-content
-            include includes/_flex-grow-shrink-basis
-            include includes/_align-self
-            include includes/_flex
-            include includes/_flex-basis-and-wrap
-            include includes/_flexbox-nav
-            include includes/_mobile-content-reorder
-            include includes/_nested-center
-            include includes/_pricing-grid
+            //- include includes/_display-flex
+            //- include includes/_flex-direction
+            //- include includes/_flex-wrap
+            //- include includes/_flex-order
+            //- include includes/_flex-alignment
+            //- include includes/_align-items
+            //- include includes/_align-content
+            //- include includes/_flex-grow-shrink-basis
+            //- include includes/_align-self
+            //- include includes/_flex
+            //- include includes/_flex-basis-and-wrap
+            //- include includes/_flexbox-nav
+            //- include includes/_mobile-content-reorder
+            //- include includes/_nested-center
+            //- include includes/_pricing-grid
             //- include includes/_equal-height
             //- include includes/_single-line-form
             //- include includes/_mobile-app-layout
-
-        script.
-            var notify = function(){
-                alert('Inline JS here.');
-            }
