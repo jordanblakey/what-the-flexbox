@@ -110,30 +110,26 @@ h2 {
 .container22 { display: flex; align-items: flex-start;}
 .container23 { display: flex; align-items: flex-end;}
 .wrap .container24 { display: flex; align-items: baseline; height: auto;
-    .box:nth-child(1n){font-size: 15px;}
-    .box:nth-child(2n){font-size: 35px;}
-    .box:nth-child(3n){font-size: 42px;}
-    .box:nth-child(4n){font-size: 33px;}
-    .box:nth-child(5n){font-size: 31px;}
-    .box:nth-child(6n){font-size: 81px;}
-    .box:nth-child(7n){font-size: 46px;}
-    .box:nth-child(8n){font-size: 19px;}
-    .box:nth-child(9n){font-size: 70px;}
-    .box:nth-child(10n){font-size: 30px;}
-}
+    .box:nth-child(1n){font-size: 15px;} .box:nth-child(2n){font-size: 35px;} .box:nth-child(3n){font-size: 42px;} .box:nth-child(4n){font-size: 33px;} .box:nth-child(5n){font-size: 31px;} .box:nth-child(6n){font-size: 81px;} .box:nth-child(7n){font-size: 46px;} .box:nth-child(8n){font-size: 19px;} .box:nth-child(9n){font-size: 70px;} .box:nth-child(10n){font-size: 30px;}}
 // Align Content
-
-
-
-
-/////////////////////////////////////////
-// MEDIA QUERYS
-/////////////////////////////////////////
-
-@media (min-width: $breakpoint-small) {
+.wrap .container25 { display: flex; align-content: space-between; flex-wrap: wrap; height: 35vh; .box {width: 33.3333%;} }
+.wrap .container26 { display: flex; align-content: flex-start; flex-wrap: wrap; height: 35vh; .box {width: 33.3333%;} }
+.wrap .container27 { display: flex; align-content: flex-end; flex-wrap: wrap; height: 35vh; .box {width: 33.3333%;} }
+.wrap .container28 { display: flex; align-content: space-around; flex-wrap: wrap; height: 35vh; .box {width: 33.3333%;} }
+.wrap .container29 { display: flex; align-content: center; flex-wrap: wrap; height: 35vh; .box {width: 33.3333%;} }
+// Align Self
+.wrap .container30 { display: flex; align-items: flex-start; height: 35vh; .box {width: 33.3333%;} .box1 {padding-bottom: 200px; align-self: baseline;} .box2 {padding-bottom: 40px; align-self: center;} .box3 {padding-bottom: 90px; align-self: flex-end;} .box4 {padding-bottom: 20px; align-self: flex-start;} .box5 {padding-bottom: 120px; align-self: stretch;} .box6 {padding-bottom: 80px; align-self: baseline;} .box7 {padding-bottom: 240px; align-self: flex-end;} .box8 {padding-bottom: 160px; align-self: stretch;} .box9 {padding-bottom: 180px; align-self: center;} .box10 {padding-bottom: 280px; align-self: baseline;} }
+// Flex
+.wrap .container31 { display: flex; align-content: space-between; flex-wrap: wrap; .box1 {flex:1;} .box2 {flex:2;} .box3 {flex:3;} .box4 {flex:4;} .box5 {flex:5;} .box6 {flex:6;} }
+// Flex grow shrink basis
+.wrap .container32 { display: flex; .box1 {flex-basis: 300px; flex-grow:3; flex-shrink:3;} .box2 {flex-basis: 300px;}  }
+.wrap .container33 { display: flex; .box1 {flex-basis: 300px; flex-grow:3; flex-shrink:3;} .box2 {flex-basis: 300px;}  }
+// Flex basis and wrap
+.wrap .container34 { height: auto; display: flex; flex-wrap: wrap; flex-direction: column; height: 40vh; .box { flex-basis: 110px; flex-grow: 1 } .box3 {flex-grow: 5} .box5 {flex-basis: 199px} } .wrap .container35 { height: auto; display: flex; flex-wrap: wrap; flex-direction: column; min-height: 100vh; .box { flex-grow: 1; } .box3 {flex-grow:4;} .box2 {flex-grow:3;} }
+// Flexbox Navigation
+nav.flex-nav {
 
 }
-
-@media (min-width: $breakpoint-medium) {
+html{
 
 }
