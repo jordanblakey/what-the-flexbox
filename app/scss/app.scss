@@ -35,11 +35,12 @@ body {
     color: #fff;
     font-family: 'Press Start 2P', cursive;
     font-size: 16px;
+    background-image: url(vid/Sunset-Lapse.jpg);
 }
 
 .homepage-hero-module {
-    min-width: 100%;
-    min-height: 100%;
+    position: fixed;
+    z-index: -1;
 }
 
 h1 {
@@ -449,5 +450,3 @@ div.wrapper.mobile-reorder {
         }
 
 }
-
-@import 'includes/_sunset_lapse_cover_vid';
