@@ -1767,8 +1767,8 @@ div.wrapper.mobile-reorder {
   .toggleNav ~ ul {
     display: none;
   }
-  ul.open {
-    display: block !important;
+  .toggleNav ~ ul.open {
+    display: block;
   }
 }
 
@@ -1822,5 +1822,81 @@ div.wrapper.mobile-reorder {
   .signup {
     -ms-flex-order: 4;
         order: 4;
+  }
+}
+
+h1 {
+  font-size: 3.5em;
+  margin-bottom: .4em;
+  color: green;
+}
+
+h2 {
+  font-size: 1.8em;
+  line-height: 1.4em;
+}
+
+.box {
+  font-size: 2em;
+}
+
+#pricing-grid .plan .cta {
+  font-size: 2em;
+}
+
+.axis {
+  font-size: 2em;
+}
+
+.flex-nav ul li a {
+  font-size: 1em;
+}
+
+#pricing-grid .plan p, #pricing-grid .plan li {
+  font-size: 1.2em;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  h1 {
+    font-size: 5vw;
+    margin-bottom: .4em;
+    color: yellow;
+  }
+  h2 {
+    font-size: 2.6vw;
+    line-height: 3.6vw;
+  }
+  .box {
+    font-size: 3vw;
+  }
+  #pricing-grid .plan .cta {
+    font-size: 2.4vw;
+  }
+  .axis {
+    font-size: 3vw;
+  }
+  #pricing-grid .plan p, #pricing-grid .plan li {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 5vw;
+    margin-bottom: .4em;
+    color: red;
+  }
+  h2 {
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+  .box {
+    font-size: 3vw;
+  }
+  #pricing-grid .plan .cta {
+    font-size: 2vw;
+  }
+  .axis {
+    font-size: 3vw;
   }
 }
