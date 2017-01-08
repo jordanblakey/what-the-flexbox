@@ -3,6 +3,7 @@
 /////////////////////////////////////////
 html {box-sizing: border-box;}
 *, *:before, *:after {box-sizing: inherit; -webkit-margin-before:0em; -webkit-margin-after:0em;}
+.row{font-family: serif;}
 
 /////////////////////////////////////////
 // IMPORTS, VARIABLES, MIXINS
@@ -12,7 +13,8 @@ html {box-sizing: border-box;}
 @import 'includes/bootstrap/_glyphicons';
 @import 'includes/_animate';
 @import 'includes/_toast';
-@import url('https://fonts.googleapis.com/css?family=VT323');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
 
 $breakpoint-small: 480px;
 $breakpoint-medium: 768px;
@@ -29,38 +31,100 @@ $breakpoint-medium: 768px;
 
 body {
     background: #000;
-    color: #0f0;
-    font-family: 'VT323', monospace;
-    font-size: 24px;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 3vw;
+    display: inline-flex;
+}
+
+h2 {
+    font-size: 2.2vw;
+    margin-bottom: 10px;
 }
 
 .row {
-    font-family: serif;
     margin-top: 20px;
 }
 
 .box {
-    border: 1px solid #0f0;
-    padding: 5px;
-    font-family: 'VT323', monospace;
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    font-size: 3vw;
+    text-align: center;
+    text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+    padding:10px;
+}
+
+.box1 { background: #1abc9c;}
+.box2 { background: #1476db;}
+.box3 { background: #8e23e2;}
+.box4 { background: #2c3749;}
+.box5 { background: #ffc530;}
+.box6 { background: #fa8f1f;}
+.box7 { background: #c43b23;}
+.box8 { background: #cde0ff;}
+.box9 { background: #00ed9f;}
+.box10 { background: #008059;}
+
+.wrap div{
+    border: 10px solid rgb(48, 48, 48);
+    height: 25vh;
     overflow: hidden;
-
-    img{
-        width: 30%;
-        display: block;
-        margin: 10% auto;
-    }
-} 
-
-.blink {
-    animation: blink-animation 1s steps(5, start) infinite;
+    margin-bottom: 30px;
+    div{border: 0; height: auto; margin: 0;}
 }
 
-@keyframes blink-animation {
-    to {
-        visibility: hidden;
-    }
+// Display Flex
+.container1 { display: flex; }
+.container2 { display: inline-flex;}
+// Flex Direction
+.container3 { display: flex; flex-direction: row; border-color: red;}
+.container4 { display: flex; flex-direction: row-reverse;}
+.axis{ z-index: 2; color:white; font-size: 3vw;}
+.wrap .container5 { display: flex; flex-direction:column; height: auto;}
+.wrap .container6 { display: flex; flex-direction:column-reverse; height: auto;}
+// Flex Wrap
+.container7 { display: flex; flex-wrap: wrap; .box {width:33.33%; height:20%;} }
+.container8 { display: flex; flex-wrap: wrap-reverse; .box {width:33.3333333%;} }
+.container9 { display: flex; flex-wrap:wrap; flex-direction: column; .box{height: 33.33%;width: 10%} }
+.container10 { display: flex; flex-wrap:wrap-reverse; flex-direction: column; .box{height: 33.33%;} }
+// Flexbox Order
+.container11 { display: flex; .box10{order: -9} .box1{order: -18} .box8{order: -3} .box1{order: 4} .box6{order: 5} .box9{order: 6} .box4{order: 7} .box7{order: 8;} .box2{order: 9} .box3{order: 10} }
+// Justify Content
+.container12 { display: flex; justify-content: flex-start;}
+.container13 { display: flex; justify-content: flex-end;}
+.container14 { display: flex; justify-content: center;}
+.container15 { display: flex; justify-content: space-between;}
+.container16 { display: flex; justify-content: space-around;}
+.wrap .container17 { display: flex; flex-direction: column; justify-content: center; height: 35vh; }
+.wrap .container18 { display: flex; flex-direction: column; justify-content: space-between; height: 35vh; }
+.wrap .container19 { display: flex; flex-direction: column; justify-content: space-around; height: 35vh; }
+// Align Items
+.container20 { display: flex; align-items: center;}
+.container21 { display: flex; align-items: stretch;}
+.container22 { display: flex; align-items: flex-start;}
+.container23 { display: flex; align-items: flex-end;}
+.wrap .container24 { display: flex; align-items: baseline; height: auto;
+    .box:nth-child(1n){font-size: 15px;}
+    .box:nth-child(2n){font-size: 35px;}
+    .box:nth-child(3n){font-size: 42px;}
+    .box:nth-child(4n){font-size: 33px;}
+    .box:nth-child(5n){font-size: 31px;}
+    .box:nth-child(6n){font-size: 81px;}
+    .box:nth-child(7n){font-size: 46px;}
+    .box:nth-child(8n){font-size: 19px;}
+    .box:nth-child(9n){font-size: 70px;}
+    .box:nth-child(10n){font-size: 30px;}
 }
+// Align Content
+
+
+
 
 /////////////////////////////////////////
 // MEDIA QUERYS
