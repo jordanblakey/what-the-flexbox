@@ -1,14 +1,29 @@
 h1 Nested Center
-h2 11. Item: flex-wrap: order
-.container11
-    .box.box1 1
-    .box.box2 2
-    .box.box3 3
-    .box.box4 4
-    .box.box5 5
-    .box.box6 6
-    .box.box7 7
-    .box.box8 8
-    .box.box9 9
-    .box.box10 10
-    <-<br>?Main<br> axis?<br>->
+h2 11. Creating complicated layouts by nesting Flexbox
+
+.wrapper#nested-center
+    .slider
+        img(src="http://lorempixel.com/1080/300/")
+
+    nav.slider-nav
+        ul
+            li.arrow
+                a(href="#")
+                    span <-
+
+            li
+                a(href="#")
+                    span Add a CLI to Node Apps with Vantage
+            li
+                a(href="#")
+                    span NewSprint, Spectacle
+            li
+                a(href="#")
+                    span Small Modules: Tales from a Serial Module Author
+            li
+                a(href="#")
+                    span The End
+
+            li.arrow
+                a(href="#")
+                    span ->

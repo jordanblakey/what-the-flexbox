@@ -1,14 +1,58 @@
 h1 Mobile Content Reorder
-h2 11. Item: flex-wrap: order
-.container11
-    .box.box1 1
-    .box.box2 2
-    .box.box3 3
-    .box.box4 4
-    .box.box5 5
-    .box.box6 6
-    .box.box7 7
-    .box.box8 8
-    .box.box9 9
-    .box.box10 10
-    <-<br>?Main<br> axis?<br>->
+h2 11. Reorder DOM elements when you hit a certain screen size.
+
+.wrapper.mobile-reorder
+    header.top
+        h1 What The Flexbox?!
+
+    nav.flex-nav
+        .toggleNav(href="#menu" name="#menu")
+            span ☰ Menu
+        ul
+            li
+                a(href="#item1" name="#item1") Item 01
+            li
+                a(href="#item2" name="#item2") Item 02
+            li
+                a(href="#item3" name="#item3") Item 03
+            li
+                a(href="#item4" name="#item4") Item 04
+            li
+                a(href="#item5" name="#item5") Item 05
+            li
+                a(href="#item6" name="#item6") Item 06
+            li.social
+                a(href="#fb" name="#fb")
+                    i.fontello-facebook-squared
+            li.social
+                a(href="#tw" name="#tw")
+                    i.fontello-twitter-squared
+            li.social
+                a(href="#gh" name="#gh")
+                    i.fontello-github-squared
+            li.social
+                a(href="#ig" name="#ig")
+                    i.fontello-instagram-squared
+
+    section.hero
+        img(src="http://lorempixel.com/1080/200/abstract")
+
+    section.details
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.
+        p Consectetur adipisicing elit, sed, Lorem ipsum dolor sit amet.
+
+    section.signup
+        form.signup(action=" ")
+            input(type="text" placeholder="Your Name")
+            input(type="email" placeholder="Email Address")
+            input(type="submit" placeholder="Sign me up!")
+
+    footer
+        p &copy; Jordan Blakey
+
+    script.
+        $(function() {
+            $('.toggleNav').on('click', function() {
+                $('.flex-nav ul').toggleClass('open');
+            });
+        });

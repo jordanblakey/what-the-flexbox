@@ -1,14 +1,35 @@
 h1 Pricing Grid
-h2 11. Item: flex-wrap: order
-.container11
-    .box.box1 1
-    .box.box2 2
-    .box.box3 3
-    .box.box4 4
-    .box.box5 5
-    .box.box6 6
-    .box.box7 7
-    .box.box8 8
-    .box.box9 9
-    .box.box10 10
-    <-<br>?Main<br> axis?<br>->
+h2 Creating an equal height pricing grid where the buttons stick to the bottom.
+
+#pricing-grid
+        .plan.plan1
+            h2 Cat
+            p Common, yet regarded by many as the worst house pet.
+                ul.features
+                    li Scratches everything
+                    li Easily lost for days
+                    li Kind of a bummer
+
+            p.price free
+            a.cta(href="#price" name="#price") 🐈 Really?
+
+        .plan.plan2
+            h2 Dog
+            p Loving, gentle and caring. Dogs are the best house pet to have and will increase happiness ten fold.
+            ul.features
+                li Super fun
+                li Friends love them
+                li Plays games
+                li Not a cat
+            p.price $90
+            a.cta(href="#price" name="#price") 🐺 Best Deal>
+
+        .plan.plan3
+            h2 Fish
+            p Cheap n' easy.
+            ul.features
+                li Eats flakes
+                li Cop out
+                li Replaceable
+            p.price $3
+            a.cta(href="#price" name="#price") 🐟
